@@ -1,0 +1,21 @@
+.WebDiv-1{
+    width: 200px;
+    height: 180px;
+    box-shadow: rgb(96, 96, 96) 3px 5px 10px  5px;
+    position: relative;
+    text-align: center;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    color: rgb(211, 28, 205);   
+}
+.WebDiv-1 i{
+    font-size: 30px;
+}
+h2{   
+    height: 40px;
+    width: 100%;
+    position: absolute;
+    bottom: -20px;
+    background-color: rgb(211, 28, 205);
+    color: white;
+}
