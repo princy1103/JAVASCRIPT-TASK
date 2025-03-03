@@ -1,0 +1,16 @@
+.WebDiv-1 {
+    width: 200px;
+    height: 180px;
+    box-shadow: rgb(96, 96, 96) 3px 5px 10px 5px;
+    position: relative;
+    text-align: center;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+i {
+    text-align: center;
+}
+.counter-div1 {
+    width: 250px;
+    height: 130px;
+}
