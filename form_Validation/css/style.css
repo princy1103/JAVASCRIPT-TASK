@@ -1,0 +1,14 @@
+.registerDiv{
+    height: 90vh;
+    /* overflow-y: scroll; */
+}
+.username{
+    height: 45px;
+}
+.login-btn{
+    background-color: #ff6575;
+    height: 45px;
+}
+.Fontcolor{
+    color: #ff6575;
+}

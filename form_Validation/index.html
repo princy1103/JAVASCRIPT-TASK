@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+<body>
+    <div class="col-6 pt-5 mx-auto">
+        <div class="w-75 mx-auto pt-5 registerDiv">
+            <div class="d-flex justify-content-between">
+                <img src="./logo.svg" alt="" class="w-25">
+                <a href="#" class="text-muted">Back To home</a>
+            </div>
+            <h2 class="fs-2 mt-5">Register Your Details</h2>
+            <div class="d-flex w-100 justify-content-between gap-1">
+                <div class="w-50">
+                    <label for="" class="mt-4">First name </label> <br>
+                    <input type="text" class="w-100 rounded border border-grey username mt-2">
+                </div>
+                <div class="w-50">
+                    <label for="" class="mt-4">Last Name</label> <br>
+                    <input type="text" class="w-100 rounded border border-grey username mt-2">
+                </div>
+            </div>
+            <form action="" onsubmit="email_validation()">
+            <label for="" class="mt-4">Username </label>
+            <input type="text" id="uname" class="w-100 rounded border border-grey username mt-2">
+            <label for="" class="mt-4">Email </label> <br>
+            <input id="email" class="w-100 rounded border border-grey username mt-2">
+            <label for="" class="mt-4">Password </label> <br>
+            <input type="password" id="pas_word" class="w-100 rounded border border-grey username mt-2">
+            <label for="" class="mt-4">Confirm Password </label> <br>
+            <input type="password" id="confirmpas" class="w-100 rounded border border-grey username mt-2">
+            <button class="w-100 login-btn border-0 rounded-1 text-white fw-bold mt-5" type="submit" onclick="confirmpassword()">Login</button>
+            <p class="text-center mt-3">Already User ? <a href="#" class="Fontcolor text-decoration-none">Login Here</a></p>
+            </form>
+        </div>
+    </div>
+<script src="./js/script.js"></script>
+</body>
+</html>
