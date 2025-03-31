@@ -37,5 +37,10 @@ const handleLogin = (e) => {
     }
     document.getElementById("login").reset();
 };
-document.getElementById("signup").addEventListener("submit", handleSignup);
-document.getElementById("login").addEventListener("submit", handleLogin);
+if (document.getElementById("signup")) {
+    document.getElementById("signup").addEventListener("submit", handleSignup);
+}
+
+if (document.getElementById("login")) {
+    document.getElementById("login").addEventListener("submit", handleLogin);
+}
