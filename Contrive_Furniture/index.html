@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contrive | furniture Store</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="./CSS/style.css">
+  <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="d-flex align-items-center justify-content-between px-5">
+    <p class="text-white pt-3">Winter sale discount off <span class="">60%</span> on all of your orders!</p>
+    <select name="" id="" class="bg-transparent text-white p-1 border-0 fs-5">
+      <option value="country" class="fw-bold text-dark fs-6">India</option>
+      <option value="india" class="fw-bold text-dark fs-6"> US</option>
+      <option value="india" class="fw-bold text-dark fs-6"> Canada</option>
+      <option value="india" class="fw-bold text-dark fs-6"> UK</option>
+    </select>
+  </nav>
+  <!-- Header -->
+  <header class="d-flex align-items-center justify-content-between ">
+    <div>
+      <img src="./IMG/logo.png" alt="Logo" class="header-logo">
+    </div>
+    <div class="d-flex align-items-center gap-5">
+      <div>
+        <ul class="pt-3 sidebar" id="sidebar">
+          <li onclick=hidesidebar()><a href="#"><i class="fa-solid fa-xmark text-dark"></i></a></li>
+          <li><a href="./index.html"><span>HOME</span></a></li>
+          <li><a href="#">ABOUT US</a></li>
+          <li><a href="#">SHOP</a></li>
+          <li><a href="#">BLOG</a></li>
+          <li><a href="#">CONTACT US</a></li>
+        </ul>
+        <ul class="pt-3">
+          <li class="hideOnmobile"><a href="./index.html"><span>HOME</span></a></li>
+          <li class="hideOnmobile"><a href="#">ABOUT US</a></li>
+          <li class="hideOnmobile"><a href="./pages/shop.html">SHOP</a></li>
+          <li class="hideOnmobile"><a href="#">BLOG</a></li>
+          <li class="hideOnmobile"><a href="#">CONTACT US</a></li>
+          <li onclick=showsidebar() class="menu-button"><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+        </ul>
+      </div>
+      <div>
+       <a href="#"><i class="fa-solid fa-magnifying-glass icons"></i></a>
+       <a href="./pages/addToCart.html"><i class="fa-solid fa-bag-shopping icons"></i></a> 
+       <a href="./pages/login.html"> <i class="fa-regular fa-user icons"></i></a>
+      </div>
+    </div>
+  </header>
+  <!-- Hero secition (slider) -->
+  <div id="carouselExampleDark" class="carousel carousel-dark" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner slider-main position-relative">
+      <div>
+        <img src="./IMG/sliderleftimage.png" alt="" class="position-absolute start-0 bottom-0">
+        <img src="./IMG/slider-rightimage.png" alt="" class="position-absolute end-0 mt-4">
+      </div>
+      <div class="carousel-item active slider-subdiv " data-bs-interval="10000">
+        <div class="slider-1">
+          <div class="slider-detail mt-5 pt-5">
+            <p class="fs-5 text-muted"><span>----</span> BEST FURNITURE</p>
+            <h2 class=" fw-bold">Discover Stylish Furniture for Every Room!</h2>
+            <h6 class="fs-5">Explore our curated collection of modern and timeless furniture designed to elevate your
+              home.</h6>
+            <button class="btn-lg px-5 py-3 shopBTN border-0 mt-5" type="submit"><a href="#"
+                class="text-decoration-none text-white">SHOP NOW</a></button>
+          </div>
+          <div class="position-relative">
+            <img src="./IMG/slider-img1.png" class="d-block" alt="...">
+            <img src="./IMG/green-arrow.png" alt="" class="position-absolute w-25 top-0 mt-5">
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item slider-subdiv" data-bs-interval="2000">
+        <div class="slider-1">
+          <div class="slider-detail mt-5 pt-5">
+            <p class="fs-5 text-muted"><span>----</span> BEST FURNITURE</p>
+            <h2 class=" fw-bold">Choose Stylish Furniture for your dream house!</h2>
+            <h6 class="fs-5">Explore our curated collection of modern and timeless furniture designed to elevate your
+              home.</h6>
+            <button class="btn-lg px-5 py-3 shopBTN border-0 mt-5" type="submit"><a href="#"
+                class="text-decoration-none text-white">SHOP NOW</a></button>
+          </div>
+          <div class="position-relative">
+            <img src="./IMG/slider-img2.png" class="d-block mt-5 pt-5" alt="...">
+            <img src="./IMG/green-arrow.png" alt="" class="position-absolute w-25 top-0 mt-4">
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item slider-subdiv">
+        <div class="slider-1">
+          <div class="slider-detail mt-5 pt-5">
+            <p class="fs-5 text-muted"><span>----</span> BEST FURNITURE</p>
+            <h2 class=" fw-bold">Explore your house with best quality and services !</h2>
+            <h6 class="fs-5">Explore our curated collection of modern and timeless furniture designed to elevate your
+              home.</h6>
+            <button class="btn-lg px-5 py-3 shopBTN border-0 mt-5" type="submit"><a href="#"
+                class="text-decoration-none text-white">SHOP NOW</a></button>
+          </div>
+          <div class="position-relative">
+            <img src="./IMG/slider-img3.png" class="d-block mt-5 pt-5" alt="...">
+            <p
+              class="display-5 p-5 position-absolute top-0 rounded-circle border text-center shopBTN text-white fw-bold">
+              50% <br> off</p>
+            <img src="./IMG/green-arrow.png" alt="" class="position-absolute w-25 top-0 mt-4 slider-arrow">
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon Previous-arrow" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon next-arrow" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- section 1 -->
+  <section class="section1-main">
+    <div class="section1-div1 text-center pt-5">
+      <p class="text-white pt-4 lh-1">NEW ARRIVALS</p>
+      <h2 class="text-white display-3 fw-bold">Get <span class="">20%</span> <br> OFF</h2>
+      <button class="btn-md shopBTN mt-2 p-3 px-5 text-white fw-bold fs-5 border-0"><a href="#"
+          class="text-decoration-none text-white">SHOP NOW</a></button>
+    </div>
+    <div class="secition1-div2Main">
+      <div class="section1-div1 section1-div2  position-relative pt-5">
+        <div class="text-start w-50 position-absolute end-0 ps-5">
+          <p class="text-white pt-4 lh-1">DECOR</p>
+          <h2 class="text-white display-6 fw-bold">Light Up <br> Your Space</h2>
+          <button class="btn-md shopBTN mt-3 p-3 px-5 text-white fw-bold fs-5 border-0"><a href="#"
+              class="text-decoration-none text-white">SHOP NOW</a></button>
+        </div>
+      </div>
+      <div class="section1-div1 section1-div2 section1-div3 pt-5">
+        <div class="text-start w-50 position-absolute end-0 ps-5">
+          <p class="text-white pt-4 lh-1">INTERIOR</p>
+          <h2 class="text-white display-6 fw-bold">Elegant<br> Wooden Table</h2>
+          <button class="btn-md shopBTN mt-3 p-3 px-5 text-white fw-bold fs-5 border-0"><a href="#"
+              class="text-decoration-none text-white">SHOP NOW</a></button>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- Section 2 -->
+  <section class="feature-section">
+    <div class="feature-1">
+      <p>BEST CHOICE</p>
+      <h2 class="display-4 fw-bold">Why You Should Choose Us</h2>
+      <h6 class="text-muted mt-5 fs-5">Quisruam est qui dolorem ipsum quia dolor sit amer adipisci velit, sed nuia non
+        numuam.</h6>
+    </div>
+    <div class="sub-feature">
+      <div class="choose-icon1 text-center bg-white rounded-circle ">
+        <img src="./IMG/choose-icon1.png" alt="" class="">
+      </div>
+      <h5 class="fw-bold fs-4 mt-4">Free Worldwide Shipping</h5>
+      <p class="text-muted fs-4 mt-3">Dolorem ipsum nuia adieisci velit ruia...</p>
+    </div>
+    <div class="sub-feature">
+      <div class="choose-icon1 text-center bg-white rounded-circle ">
+        <img src="./IMG/choose-icon2.png" alt="" class="">
+      </div>
+      <h5 class="fw-bold fs-4 mt-4">Easy Return <br> Policy</h5>
+      <p class="text-muted fs-4 mt-3">Nolorem ipsum nuia adieisci velit ruia...</p>
+    </div>
+    <div class="sub-feature">
+      <div class="choose-icon1 text-center bg-white rounded-circle ">
+        <img src="./IMG/choose-icon3.png" alt="" class="">
+      </div>
+      <h5 class="fw-bold fs-4 mt-4">Full Secure <br> Payment</h5>
+      <p class="text-muted fs-4 mt-3">Dolorem ipsum nuia adieisci velit ruia...</p>
+    </div>
+  </section>
+  <!-- Section 3 -->
+  <section class="about-section">
+    <div class="aboutDiv-1">
+      <img src="./IMG/about-image1.jpg" alt="">
+      <div class="d-flex justify-content-between mt-5">
+        <div class="about-subDiv">
+          <h2 class="fw-bold display-4 text-white">23<span>+</span></h2>
+          <p class="text-white fs-5">Years of Experience</p>
+        </div>
+        <div class="about-subDiv border-start px-5 border-end border-secondary">
+          <h2 class="fw-bold display-4 text-white">100<span>%</span></h2>
+          <p class="text-white fs-5">Years of Experience</p>
+        </div>
+        <div class="about-subDiv">
+          <h2 class="fw-bold display-4 text-white">30<span>k+</span></h2>
+          <p class="text-white fs-5">Years of Experience</p>
+        </div>
+      </div>
+    </div>
+    <div class="aboutDiv-1 aboutDiv-2">
+      <p class="text-white fs-5">ABOUT US</p>
+      <h4 class="text-white display-4 fw-bold">Crafting Your Dream Space with Passion</h4>
+      <p class="fs-4 text-white pt-4">Duis aute irure dolor in reprehenderit in voluptate aure velit esse cillum dolore
+        eu fugiat nulla pariatur reiciendis voluptatibus maiores alias.</p>
+      <button class="shopBTN btn-lg p-3 px-5 fw-bold border-0  rounded-0">READ MORE</button>
+      <div class="about-img2"></div>
+    </div>
+  </section>
+  <!-- Section 4  -->
+  <section class="categories-main">
+    <p class="text-uppercase text-center fw-bold">Categories</p>
+    <h5 class="text-center fw-bold display-4">Shop By Categories</h5>
+    <div class="categories-div">
+      <div class="text-center"><img src="./IMG/categories-image1.jpg" alt="" class="categories-img">
+        <h4 class="mt-3">Living Room Essentials</h4>
+      </div>
+      <div class="text-center"><img src="./IMG/categories-image2.jpg" alt="" class="categories-img">
+        <h4 class="mt-3">Bedroom Retreats</h4>
+      </div>
+      <div class="text-center"><img src="./IMG/categories-image3.jpg" alt="" class="categories-img">
+        <h4 class="mt-3">Dining & Entertaining</h4>
+      </div>
+      <div class="text-center"><img src="./IMG/categories-image4.jpg" alt="" class="categories-img">
+        <h4 class="mt-3">Home Office Solutions</h4>
+      </div>
+    </div>
+  </section>
+  <!-- section 5 -->
+  <section class="offer-section about-img2">
+    <p class="text-uppercase fs-5">Special Offer</p>
+    <h6 class="fw-bold">Limited <br> Time Offer!</h6>
+    <h5 class="fs-2 my-4">Save Up to <span>30%</span> on Select Furniture!</h5>
+    <button class="shopBTN btn-lg p-3 px-5 fw-bold border-0 text-white rounded-0 mt-3">READ MORE</button>
+  </section>
+  <!-- section 6(Testimonials) -->
+  <section class="container">
+    <p class="fs-5 text-center">Testimonials</p>
+    <h3 class="display-4 fw-bold mb-5 text-center">Our Customers Review</h3>
+    <div class="swiper-wrapper mt-5">
+      <div class="card-detail p-5">
+        <img src="./IMG/testimonial-quoteimage.png" alt="" class="quoteimage">
+        <p class="text-muted pt-4 fs-5">Sit amet Nisi, perspiciatis aspernatur, officiis
+          voluptate laborum quam asperiores voluptatibus ! illum veniam eum cumque,aut!...</p>
+        <div class="d-flex align-items-center gap-4 mt-4">
+          <div><img src="./IMG/testimonial-personimage1.jpg" alt="" class="rounded-circle personimage1"></div>
+          <div class="pt-3">
+            <h4>Kevin Andrew</h4>
+            <p>Happy Client </p>
+          </div>
+        </div>
+      </div>
+      <div class="card-detail p-5">
+        <img src="./IMG/testimonial-quoteimage.png" alt="" class="quoteimage">
+        <p class="text-muted pt-4 fs-5">Lorem ipsum dolor , adipisicing elit. Eaque harum, incidunt
+          consequatur, iste fugiat temporibus sunt in, optio eligendi ...</p>
+        <div class="d-flex align-items-center gap-4 mt-4">
+          <div><img src="./IMG/testimonial-personimage2.jpg" alt="" class="rounded-circle personimage1"></div>
+          <div class="pt-3">
+            <h4>Peri James</h4>
+            <p>Happy Client </p>
+          </div>
+        </div>
+      </div>
+      <div class="card-detail p-5">
+        <img src="./IMG/testimonial-quoteimage.png" alt="" class="quoteimage">
+        <p class="text-muted pt-4 fs-5">illum veniam ipsum dolor sit amet consectetur adipisicing
+          elit. Ipsa quos mollitia eum quis eos tenetur sit doloremque.officia!...</p>
+        <div class="d-flex align-items-center gap-4 mt-4">
+          <div><img src="./IMG/testimonial-personimage3.jpg" alt="" class="rounded-circle personimage1"></div>
+          <div class="pt-3">
+            <h4> Naurth Reough</h4>
+            <p>Happy Client </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- seciton 7 -->
+  <section class="subcription-div position-relative">
+    <img src="./IMG/sliderleftimage.png" alt="" class="position-absolute bottom-0 pb-5">
+    <img src="./IMG/update-rightimage.png" alt="" class="position-absolute end-0 pt-5">
+    <div class="subcription">
+      <div><img src="./IMG/slider-img2.png" alt="" class="Subscribe-img"></div>
+      <div class="Subscribe-detail">
+        <p class="text-white text-uppercase fs-5">Newsletter Subscription</p>
+        <h3 class="text-white display-4 fw-bold mb-5">Get the Latest Update <br> into Your Inbox</h3>
+        <input type="email" class="p-2 bg-white border-0" placeholder="Enter your email..">
+        <button class="btn-lg text-white fw-bold border-0 rounded-0 px-5 py-4">Subscribe</button>
+      </div>
+    </div>
+  </section>
+  <!-- footer section -->
+  <footer>
+    <div class="footer-div1">
+      <div class="footer-detail">
+        <img src="./IMG/footer-logo.png" alt="" class="header-logo">
+        <p class="text-white text-opacity-25 fs-5 py-4 fw-lighter">Duis aute irure dolor in reprehenderit in voluptate velit cillum dolore eu
+          fugiat nulla pariatur ccaecat cupidata proident, sunt in culpa officia deserunt mollit.</p>
+        <div class="footer-icons">
+          <i class="fa-brands fa-facebook-f p-3 border text-white fs-5"></i>
+          <i class="fa-brands fa-instagram p-3 border text-white fs-5 mx-3"></i>
+          <i class="fa-brands fa-youtube p-3 border text-white fs-5"></i>
+        </div>
+      </div>
+      <div class="footer-div2">
+        <ul class="text-white">
+          <li class="fs-3 fw-bold pb-4">Navigation</li>
+          <li class="pb-3"><i class="fa-solid fa-angle-right me-3"></i><a href="#" class="text-decoration-none fs-5">Home</a> </li>
+          <li class="pb-3"><i class="fa-solid fa-angle-right me-3"></i><a href="#" class="text-decoration-none fs-5">Shop</a> </li>
+          <li class="pb-3"><i class="fa-solid fa-angle-right me-3"></i><a href="#" class="text-decoration-none fs-5">About Us</a> </li>
+          <li class="pb-3"><i class="fa-solid fa-angle-right me-3"></i><a href="#" class="text-decoration-none fs-5">Blog</a></li>
+          <li class="pb-3"><i class="fa-solid fa-angle-right me-3"></i><a href="#" class="text-decoration-none fs-5">Contact</a></li>
+        </ul>
+        <ul class="text-white">
+          <li class="fs-3 fw-bold pb-4 ">Support</li>
+          <li class="pb-3"><i class="fa-solid fa-angle-right me-3"></i><a href="#" class="text-decoration-none fs-5">Term of use</a> </li>
+          <li class="pb-3"><i class="fa-solid fa-angle-right me-3"></i><a href="#" class="text-decoration-none fs-5">Privacy Policy</a> </li>
+          <li class="pb-3"><i class="fa-solid fa-angle-right me-3"></i><a href="#" class="text-decoration-none fs-5">Chookie Policy</a> </li>
+          <li class="pb-3"><i class="fa-solid fa-angle-right me-3"></i><a href="#" class="text-decoration-none fs-5">Latest posts</a></li>
+          <li class="pb-3"><i class="fa-solid fa-angle-right me-3"></i><a href="#" class="text-decoration-none fs-5">Care Guide</a></li>
+        </ul>
+        <ul class="text-white">
+          <li class="fs-3 fw-bold pb-4">Contact Us</li>
+          <li class="pb-3"><i class="fa-solid fa-phone me-3"></i><a href="#" class="text-decoration-none fs-5">+1235 211 5236</a> </li>
+          <li class="pb-3"><i class="fa-solid fa-envelope me-3"></i><a href="#" class="text-decoration-none fs-5">hello@contrive.com</a> </li>
+          <li class="pb-3 w-75"><i class="fa-solid fa-location-dot me-3"></i><a href="#" class="text-decoration-none fs-5">121 King Street Melbourne, <span class="ps-4">3000, Australia</span></a> </li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-top border-secondary w-100 d-flex justify-content-around pt-5">
+        <p class="text-white fw-lighter w-50 Copyright-text">Copyright © 2025 contrive.com All rights reserved.</p>
+        <div class="w-50 text-center"> <img src="./IMG/footer-logos.png" alt="" class=""></div>
+    </div>
+  </footer>
+  <!-- JS  -->
+  <script src="./JS/script.js"></script>
+  <script src="./JS/bootstrap.bundle.min.js"></script>
+</body>
+</html>

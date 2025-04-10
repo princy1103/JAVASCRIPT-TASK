@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contrive | SHOP </title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="d-flex align-items-center justify-content-between px-5">
+        <p class="text-white pt-3">Winter sale discount off <span class="">60%</span> on all of your orders!</p>
+        <select name="" id="" class="bg-transparent text-white p-1 border-0 fs-5">
+            <option value="country" class="fw-bold text-dark fs-6">India</option>
+            <option value="india" class="fw-bold text-dark fs-6"> US</option>
+            <option value="india" class="fw-bold text-dark fs-6"> Canada</option>
+            <option value="india" class="fw-bold text-dark fs-6"> UK</option>
+        </select>
+    </nav>
+    <!-- Header -->
+    <header class="d-flex align-items-center justify-content-between ">
+        <div>
+            <img src="../IMG/logo.png" alt="Logo" class="header-logo">
+        </div>
+        <div class="d-flex align-items-center gap-5">
+            <div>
+                <ul class="pt-3 sidebar" id="sidebar">
+                    <li onclick=hidesidebar()><a href="#"><i class="fa-solid fa-xmark text-dark"></i></a></li>
+                    <li><a href="../index.html"><span>HOME</span></a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">SHOP</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                </ul>
+                <ul class="pt-3">
+                    <li class="hideOnmobile"><a href="../index.html"><span>HOME</span></a></li>
+                    <li class="hideOnmobile"><a href="#">ABOUT US</a></li>
+                    <li class="hideOnmobile"><a href="#">SHOP</a></li>
+                    <li class="hideOnmobile"><a href="#">BLOG</a></li>
+                    <li class="hideOnmobile"><a href="#">CONTACT US</a></li>
+                    <li onclick=showsidebar() class="menu-button"><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+                </ul>
+            </div>
+            <div>
+                <a href="#"><i class="fa-solid fa-magnifying-glass icons"></i></a>
+                <a href="./addToCart.html"><i class="fa-solid fa-bag-shopping icons"></i></a>
+                <a href="./login.html"> <i class="fa-regular fa-user icons"></i></a>
+            </div>
+        </div>
+    </header>
+    <!-- hero section -->
+    <section class="shop-herosection about-img2 position-relative ">
+        <img src="../IMG/sliderleftimage.png" alt="" class="position-absolute bottom-0 pb-5">
+        <img src="../IMG/slider-rightimage.png" alt="" class="position-absolute end-0 pt-5">
+        <div class="w-25 mx-auto text-center">
+            <p class="display-3 fw-bold ">Shop</p>
+            <p class="fs-4 text-muted py-3">Add elegance and functionality to your home with our attractive products.
+            </p>
+            <button class="btn-lg p-3 px-5 bg-white border-0"><a href="../index.html"
+                    class="text-decoration-none text-danger">HOME</a> / Shop</button>
+        </div>
+    </section>
+    <!-- product section -->
+    <section class="container product-section">
+        <div class="d-flex justify-content-between gap-3">
+            <input type="search" class=" ps-4 w-25 border border-secondary-subtle login-inputs" placeholder="Search" id="search">
+            <div class="d-flex justify-content-between w-75 align-items-center">
+                <div>
+                    <i class="fa-solid fa-braille p-3 fs-4 shopBTN text-white me-3"></i>
+                    <i class="fa-solid fa-list-ul p-3 fs-4 border"></i>
+                </div>
+                <select class="fs-5 login-inputs w-25">
+                    <option value="default">Default Sorting</option>
+                    <option value="sofa" class="fs-5" id="Chair">Chair</option>
+                    <option value="lamp" class="fs-5">Lamp</option>
+                </select>
+            </div>
+        </div>
+        <!-- <div class="all-products mt-5 d-flex justify-content-center gap-2">
+            <div class="product-detail p-3">
+                <div class="pro-img text-center pt-4">
+                    <img src="../IMG/product-1.png" alt="">
+                </div>
+                <h2 class="w-75 pt-3">Rustic Farmhouse Dining Table</h2>
+                <div class="d-flex align-items-center justify-content-between">
+                    <h3 class="fw-bold">$48 <span class="text-muted fw-normal text-decoration-line-through fs-5">$89.00</span></h3>
+                    <i class="fa-regular fa-heart fs-4"></i>
+                </div>
+                <button class="shopBTN px-4 py-2 border-0 rounded-pill text-white fw-bold">ADD TO CART </button>
+            </div>
+            <div class="product-detail p-3">
+                <div class="pro-img text-center pt-4">
+                    <img src="../IMG/slider-img3.png" alt="">
+                </div>
+                <h2 class="w-75 pt-3">Rustic Farmhouse Dining Table</h2>
+                <div class="d-flex align-items-center justify-content-between">
+                    <h3 class="fw-bold">$48 <span class="text-muted fw-normal text-decoration-line-through fs-5">$89.00</span></h3>
+                    <i class="fa-regular fa-heart fs-4"></i>
+                </div>
+                <button class="shopBTN px-4 py-2 border-0 rounded-pill text-white fw-bold">ADD TO CART </button>
+            </div>
+            <div class="product-detail p-3">
+                <div class="pro-img text-center pt-4">
+                    <img src="../IMG/product-3.png" alt="">
+                </div>
+                <h2 class="w-75 pt-3">Rustic Farmhouse Dining Table</h2>
+                <div class="d-flex align-items-center justify-content-between">
+                    <h3 class="fw-bold">$48 <span class="text-muted fw-normal text-decoration-line-through fs-5">$89.00</span></h3>
+                    <i class="fa-regular fa-heart fs-4"></i>
+                </div>
+                <button class="shopBTN px-4 py-2 border-0 rounded-pill text-white fw-bold">ADD TO CART </button>
+            </div>
+            
+        </div> -->
+        <div class="text-center mt-5">
+            <div id="product-container"></div>
+        </div>    
+    </section>
+    <!-- JS  -->
+    <script src="../JS/script.js"></script>
+    <script src="../JS/addtocart.js"></script>
+    <script src="../JS/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

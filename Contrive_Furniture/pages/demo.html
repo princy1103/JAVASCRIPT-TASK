@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product List</title>
+  <style>
+    .product {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin: 10px;
+      width: 200px;
+      display: inline-block;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>Our Products</h1>
+  <div id="product-container"></div>
+
+ <script>
+    // Sample product data
+const products = [
+  { id: 1, name: "T-shirt", price: 19.99},
+  { id: 2, name: "Shoes", price: 49.99 },
+  { id: 3, name: "Hat", price: 14.99 },
+];
+const container = document.getElementById('product-container');
+products.forEach(product => {
+  const div = document.createElement('div');
+  div.className = 'product';
+  div.innerHTML = `
+    <h3>${product.name}</h3>
+    <p>Price: $${product.price.toFixed(2)}</p>
+    <button>Add to Cart</button>
+  `;
+  container.appendChild(div);
+});
+ </script>
+</body>
+</html>
