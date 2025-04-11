@@ -1,0 +1,14 @@
+{
+  "users": [
+    {
+      "id": "46d9",
+      "username": "Demo1",
+      "city": "surat"
+    },
+    {
+      "id": "787c",
+      "username": "Demo2",
+      "city": "Delhi"
+    }
+  ]
+}
