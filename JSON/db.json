@@ -20,18 +20,18 @@
       "img": "https://html.designingmedia.com/contrive/assets/images/feature-image2.png"
     },
     {
-      "id": "cc85",
       "title": "table",
       "price": "$34",
       "description": "Luxury Living Dresser",
-      "img": "https://html.designingmedia.com/contrive/assets/images/feature-image3.png"
+      "img": "https://html.designingmedia.com/contrive/assets/images/feature-image3.png",
+      "id": "cc85"
     },
     {
-      "id": "4e22",
       "title": "lamp",
-      "price": "$20",
+      "price": "$23",
       "description": "Elegant Floor Lamp",
-      "img": "https://html.designingmedia.com/contrive/assets/images/feature-image6.png"
+      "img": "https://html.designingmedia.com/contrive/assets/images/feature-image6.png",
+      "id": "30ee"
     }
   ]
 }
