@@ -1,0 +1,36 @@
+{
+  "product": [
+    {
+      "id": "d400",
+      "title": "table",
+      "price": 12000,
+      "description": "Luxury Living Dresser",
+      "img": "https://html.designingmedia.com/contrive/assets/images/feature-image3.png",
+      "category": "table"
+    },
+    {
+      "id": "bd12",
+      "title": "sofa",
+      "price": 55000,
+      "description": "Serenity Room Sofa",
+      "img": "https://html.designingmedia.com/contrive/assets/images/shop-image8.png",
+      "category": "sofa"
+    },
+    {
+      "id": "ff64",
+      "title": "lamp",
+      "price": 1200,
+      "description": "Elegant Floor Lamp",
+      "img": "https://html.designingmedia.com/contrive/assets/images/feature-image6.png",
+      "category": "lamp"
+    },
+    {
+      "id": "fd75",
+      "title": "chair",
+      "price": 1800,
+      "description": "Industrial-Style Accent Chair",
+      "img": "https://html.designingmedia.com/contrive/assets/images/feature-image4.png",
+      "category": "chair"
+    }
+  ]
+}

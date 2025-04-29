@@ -1,0 +1,51 @@
+div{
+    /* text-align: center; */
+    margin-top: 50px;
+    text-align: center;
+}
+section{
+    display: inline-block;
+    margin: 20px;
+    border: 1px solid grey;
+    padding: 20px;
+}
+select{
+    width: 18%;
+    height: 45px;
+    margin-bottom: 20px;
+    margin-left: 8%
+}
+form{
+    margin-top: 5%;
+}
+input{
+    width: 30%;
+    height: 40px;
+    margin-bottom: 20px;
+    display: block;
+    margin-top: 20px;
+    margin-left: 8%;
+}
+.btnlth{
+    margin-left: 8%;
+}
+button{
+    width: 7%;
+    height: 45px;
+    font-size: 18px;
+    background-color: rgb(104, 139, 139);
+    color: white;
+}
+button:hover{
+    cursor: pointer;
+    background-color: white;
+    color: rgb(104, 139, 139);
+    border: 1px solid rgb(104, 139, 139);
+    transition: all ease-in-out 0.9s;
+}
+input:focus{
+    outline: none;
+}
+label{
+    font-size: 20px;
+}
