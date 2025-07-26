@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTRIVE - SIGN UP</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/media.css">
+    <link rel="stylesheet" href="../style/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="login-section signup-section">
+    <header class="d-flex align-items-center justify-content-between " id="navbar"></header>
+    <!-- Sign-up form -->
+    <section class="login-wrappe text-center signup-wrapper" >
+        <img src="../IMG/logo.png" alt="" class="header-logo">
+        <h2 class="display-4 fw-bold my-3 text-center">Create Your FREE Account!</h2>
+        <form class="login-detail bg-white text-start p-4" id="user">
+          <label for="name" class="fw-bold fs-5 ">Your full name</label>
+          <input type="text" class="my-3 login-inputs" required id="name">
+          <label for="email" class="fw-bold fs-5 ">Your e-mail</label>
+          <input type="email" class="my-3 login-inputs" required id="email">
+          <label for="password" class="fw-bold fs-5">Enter your password <span class="fw-normal">(Min. 6
+              Character)</span></label>
+          <input type="password" class="my-3 login-inputs" required id="password">
+          <label for="options" class="fw-bold fs-5">How did you find out about Noncorehub?<span class="fw-normal">
+              (optional)</span></label>
+          <select name="" id="" class="login-inputs fs-5 text-muted ps-3 my-3">
+            <option class="fs-5 text-muted">Please, choose the first interaction you remember.</option>
+            <option class="fs-5">Online community (e.g. GitHub, Reddit, Stack Overflow, Hacker News, ...)</option>
+            <option class="fs-5">Website article, blog (not ours)</option>
+            <option class="fs-5">Review site (e.g. G2, Capterra, ...)</option>
+            <option class="fs-5">Search engine (e.g. Google, Bing, ...)</option>
+            <option class="fs-5">App store listing (App Store, Google Play)</option>
+            <option class="fs-5">Social media (e.g. Twitter / Quora / Facebook / LinkedIn...)</option>
+            <option class="fs-5">YouTube</option>
+            <option class="fs-5">From a friend, colleague, ...</option>
+            <option class="fs-5">Message group (e.g. Discord, Slack, Telegram, ...)</option>
+            <option class="fs-5">Event (e.g. workshop, conference or meet up)</option>
+            <option class="fs-5">Podcast</option>
+            <option class="fs-5">Other</option>
+          </select>
+          <input type="checkbox" class="checkbox">
+          <label for="" class="fs-5 ps-1">Inform me about new features and updates (max. twice a month)
+          </label>
+          <button type="submit" class="shopBTN border-0 fs-4 my-3 fw-bold text-white">Register Now</button>
+        </form>
+      </section>
+      <p class="text-center pb-5">
+        <a href="./login.html" class="text-dark text-decoration-none fs-4">Already have an account?<span
+            class="text-info">CLICK</span></a>
+      </p>
+    <!-- JS -->
+    <script type="module" src="../javascript/signup.js"></script>
+    <script src="../javascript/script.js"></script>
+    <script src="../javascript/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

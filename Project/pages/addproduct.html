@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTRIVE - ADD Product</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/media.css">
+    <link rel="stylesheet" href="../style/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="login-section signup-section">
+    <header class="d-flex align-items-center justify-content-between " id="navbar"></header>
+    <!-- Form for add products-->
+    <section class="login-wrappe text-center signup-wrapper" >
+        <img src="../IMG/logo.png" alt="" class="header-logo">
+        <h2 class="display-5 fw-bold my-3 text-center">Enter Product Details !</h2>
+        <form class="login-detail bg-white text-start p-4" id="addproduct">
+          <label for="productname" class="fw-bold fs-5 ">Product name</label>
+          <input type="text" class="my-3 login-inputs" required id="productname" name="productname">
+
+          <label for="description" class="fw-bold fs-5 ">Description</label>
+          <input type="text" class="my-3 login-inputs" name="description" required id="description">
+    
+          <label for="options" class="fw-bold fs-5">Select Category</label>
+          <select id="category" class="login-inputs fs-5 text-muted ps-3 my-3">
+            <option class="fs-5 text-muted">Select Category !</option>
+            <option class="fs-5">Furniture</option>
+            <option class="fs-5">Chair</option>
+            <option class="fs-5">Table</option>
+            <option class="fs-5">Lamp</option>
+            <option class="fs-5">Cup-Board</option>
+            <option class="fs-5">Sofa</option>
+          </select>
+          <label for="img" class="fw-bold fs-5" >Image</label>
+          <input type="url" class="my-3 login-inputs" required id="productimg" name="img">
+          <label for="price" class="fw-bold fs-5" >Price</label>
+          <input type="text" class="my-3 login-inputs" required id="price" name="price">
+          <button type="submit" class="shopBTN border-0 fs-4 my-3 fw-bold text-white">ADD</button>
+        </form>
+      </section>
+    <!-- JS -->
+    <script type="module" src="../javascript/addproduct.js"></script>
+    <script src="../javascript/script.js"></script>
+    <script src="../javascript/bootstrap.bundle.min.js"></script>
+</body>
+</html>

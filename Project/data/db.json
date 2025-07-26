@@ -1,0 +1,34 @@
+{
+  "users": [
+    {
+      "id": "214f",
+      "name": "sample",
+      "email": "sample1@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": "abe6",
+      "name": "demo",
+      "email": "demo@gmail.com",
+      "password": "143"
+    }
+  ],
+  "products": [
+    {
+      "id": "2ba6",
+      "title": "lamp",
+      "price": "$20",
+      "desc": "Elegant Floor Lamp",
+      "category": "Lamp",
+      "img": "https://html.designingmedia.com/contrive/assets/images/feature-image3.png"
+    },
+    {
+      "id": "c308",
+      "title": "dresser",
+      "price": "$34",
+      "desc": "Luxury Living Dresser",
+      "category": "Table",
+      "img": "https://html.designingmedia.com/contrive/assets/images/feature-image6.png"
+    }
+  ]
+}

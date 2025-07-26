@@ -1,0 +1,142 @@
+:root{
+    --orange:#fb704f;
+    --main-darkGreen:#2c5858;
+}
+header{
+    height: 120px;
+    width: 100%;
+    padding: 0px 40px;
+}
+.header-logo{
+    width: 200px;
+}
+header ul{
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+header a{
+    font-size: 22px;
+    color: rgb(68, 68, 68);
+    text-decoration: none;
+}
+header a:hover{
+    color: var(--orange);
+    transition: all 1s;
+}
+header i{
+    padding-right:20px;
+    font-size: 25px;
+    color: rgb(68, 68, 68);
+}
+.sidebar{
+    position: fixed;
+    top: 200;
+    right: 0;
+    height: 50vh;
+    width: 300px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0px 10px rgba(0,0,0,0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.menu-button{
+    display: none;
+}
+/* slider */
+.slider-main{
+    height: 110vh;
+    background-image: url(/Contrive_Furniture/IMG/banner-backgroundimage.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.slider-subdiv{
+    height: 110vh;
+}
+.slider-detail{
+    width: 780px;
+}
+.slider-detail h2{
+    font-size: 10vh;
+}
+.slider-detail h2,h6{
+    letter-spacing: 2px;
+}
+.slider-detail p{
+    letter-spacing: 3px;
+}
+.slider-detail span{
+    color: var(--orange);
+}
+.shopBTN{
+    background-color:var(--orange);
+}
+.slider-1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 150px;
+}
+.slider-arrow{
+    left:180px;
+}
+.slider-1 img{
+    width: 850px;
+}
+.Previous-arrow{
+    margin-right: 170px;
+}
+.next-arrow{
+    margin-left: 170px;
+}
+/* login page  */
+.login-section{
+    height: 100vh;
+    background-color: #f7fcf4;
+}
+.login-wrappe{
+    width: 570px;
+    height: 600px;
+    margin: auto;
+    margin-top: 120px;
+}
+.login-section header{
+    background-color: var(--main-darkGreen);
+}
+.login-inputs{
+    width: 100%;
+    height: 70px;
+    border: 0.5px solid rgb(224, 224, 224);
+}
+.login-inputs:focus{
+    outline: 0.5px solid var(--orange);
+}
+.login-detail button{
+    width: 100%;
+    height: 70px;
+}
+.login-detail button:hover{
+    background-color: var(--main-darkGreen);
+    transition: all 0.8s ease-in-out;
+}
+.checkbox{
+    width: 18px;
+    height: 18px;
+}
+.login-section header a{
+    color: white;
+}
+/* sign up page */
+.signup-section{
+    height: 120vh;
+}
+.signup-wrapper{
+    width: 900px;
+    height: 880px;
+}

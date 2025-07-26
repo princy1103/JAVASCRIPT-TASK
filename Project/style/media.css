@@ -1,0 +1,50 @@
+@media only screen and  (max-width:455px)
+{
+    .sidebar{
+        width: 100%;
+    }
+    header{
+        padding: 0;
+    }
+    header i{
+        padding: 0px 5px;
+    }
+    .icons{
+        font-size: 18px;
+    }
+    .hideOnmobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+}
+@media only screen and ((min-width: 456px) and (max-width:1060px))
+{
+    .hideOnmobile{
+        display: none;
+    }
+    header{
+        padding: 0px 40px;
+    }
+    header i{
+        padding: 0px 5px;
+    }
+    .icons{
+        font-size: 18px;
+    }
+    .menu-button{
+        display: block;
+    }
+}
+@media only screen and (width >= 1061px) {
+    header{
+        width: 100%;
+        padding: 0px 40px;
+    }
+    .slider-1{
+        display: flex;
+        justify-content: space-around;
+    }
+
+}
