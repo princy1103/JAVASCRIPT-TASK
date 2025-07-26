@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add TO Product</title>
+    <!-- css -->
+     <link rel="stylesheet" href="../Style/Style.css">
+     <link rel="stylesheet" href="../Style/bootstrap.min.css">
+</head>
+<body>
+   <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid gap-5 fs-4">
+            <div>
+                <img src="../Img/logo.jpg" alt="" class="logo rounded-circle">
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Pages/addProduct.html">Add Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Pages/Products.html">Products</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </nav>
+    <!-- Form for add product -->
+        <section class="product-wrapper text-center" >
+        <img src="../Img/logo.jpg" alt="" class="logo">
+        <h2 class="display-5 fw-bold my-3 text-center">Enter Product Details !</h2>
+        <form class=" bg-white text-start p-4" id="addproduct">
+          <label for="productname" class="fw-bold fs-5 ">Product name</label>
+          <input type="text" class="my-3 product-inputs" required id="productname" name="productname">
+
+          <label for="description" class="fw-bold fs-5 ">Description</label>
+          <input type="text" class="my-3 product-inputs" name="description" required id="description">
+    
+          <label for="options" class="fw-bold fs-5">Select Category</label>
+          <select id="category" class="product-inputs fs-5 text-muted ps-3 my-3">
+            <option class="fs-5 text-muted">Select Category !</option>
+            <option class="fs-5">Furniture</option>
+            <option class="fs-5">Chair</option>
+            <option class="fs-5">Table</option>
+            <option class="fs-5">Lamp</option>
+            <option class="fs-5">Cup-Board</option>
+            <option class="fs-5">Sofa</option>
+          </select>
+          <label for="img" class="fw-bold fs-5" >Image</label>
+          <input type="url" class="my-3 product-inputs" required id="productimg" name="img">
+          <label for="price" class="fw-bold fs-5" >Price</label>
+          <input type="text" class="my-3 product-inputs" required id="price" name="price">
+          <button type="submit" class=" border-0 fs-4 my-3 fw-bold">ADD</button>
+        </form>
+      </section>
+
+    <!-- script -->
+    <script type="module"  src="../Javascript/addProduct.js"></script>
+    <script src="../Javascript/bootstrap.bundle.min.js"></script>
+</body>
+</html>

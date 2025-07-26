@@ -29,6 +29,14 @@
       "desc": "Luxury Living Dresser",
       "category": "Table",
       "img": "https://html.designingmedia.com/contrive/assets/images/feature-image6.png"
+    },
+    {
+      "id": "ef12",
+      "title": "demo",
+      "price": "$20",
+      "desc": "nothing",
+      "category": "Table",
+      "img": "https://html.designingmedia.com/contrive/assets/images/feature-image3.png"
     }
   ]
 }
