@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Define Function</title>
+    <!-- css -->
+     <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h2>Basic Calculation Using UDF</h2>
+
+  <!-- Even or Odd -->
+  <div class="task">
+    <h4>1. Check Even or Odd</h4>
+    <input type="number" id="evenOddInput" placeholder="Enter number" />
+    <button onclick="checkEvenOdd()">Check</button>
+    <div class="output" id="evenOddOutput"></div>
+  </div>
+
+  <!-- Reverse String -->
+  <div class="task">
+    <h4>2. Reverse String</h4>
+    <input type="text" id="reverseInput" placeholder="Enter text" />
+    <button onclick="reverseString()">Reverse</button>
+    <div class="output" id="reverseOutput"></div>
+  </div>
+
+  <!-- Factorial -->
+  <div class="task">
+    <h4>3. Factorial</h4>
+    <input type="number" id="factorialInput" placeholder="Enter number" />
+    <button onclick="factorial()">Calculate</button>
+    <div class="output" id="factorialOutput"></div>
+  </div>
+
+  <!-- Find Max in Array -->
+  <div class="task">
+    <h4>4. Find Max in Array</h4>
+    <input type="text" id="arrayInput" placeholder="Enter numbers (comma-separated)" />
+    <button onclick="findMax()">Find Max</button>
+    <div class="output" id="maxOutput"></div>
+  </div>
+
+  <!-- Calculator -->
+  <div class="task">
+    <h4>5. Simple Calculator</h4>
+    <input type="number" id="calcA" placeholder="Value of A" />
+    <select id="calcOp">
+      <option value="+">+</option>
+      <option value="-">-</option>
+      <option value="*">*</option>
+      <option value="/">/</option>
+    </select>
+    <input type="number" id="calcB" placeholder="Value of B" />
+    <button onclick="calculator()">Calculate</button>
+    <div class="output" id="calcOutput"></div>
+  </div>
+
+
+    <!-- JS -->
+     <script src="./index.js"></script>
+</body>
+</html>
