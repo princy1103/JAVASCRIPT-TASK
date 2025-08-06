@@ -1,0 +1,24 @@
+{
+  "products": [
+    {
+      "id": "8dc8",
+      "name": "Product1",
+      "price": 500,
+      "image": "https://static.vecteezy.com/system/resources/thumbnails/001/401/513/small_2x/chair-on-3d-gray-background-for-advertising-free-photo.jpg"
+    },
+    {
+      "id": "2b46",
+      "name": "Product2",
+      "price": 200,
+      "image": "https://tse2.mm.bing.net/th/id/OIP.-YbBgTD1rkr1lz7dLquWhQHaHa?r=0&cb=thfvnext&rs=1&pid=ImgDetMain&o=7&rm=3"
+    }
+  ],
+  "cart": [
+    {
+      "id": "2b46",
+      "name": "Product2",
+      "price": 200,
+      "image": "https://tse2.mm.bing.net/th/id/OIP.-YbBgTD1rkr1lz7dLquWhQHaHa?r=0&cb=thfvnext&rs=1&pid=ImgDetMain&o=7&rm=3"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Add Product</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <nav>
+    <ul>
+      <li>
+        <a href="./index.html">HOME</a>
+      </li>
+      <li>
+        <a href="./products.html">PRODUCTS</a>
+      </li>
+      <li>
+        <a href="./cart.html">CART</a>
+      </li>
+    </ul>
+  </nav>
+  <h1>Add Product</h1>
+  <form id="productForm">
+    <input type="text" id="name" placeholder="Product Name" required />
+    <input type="number" id="price" placeholder="Price" required />
+    <input type="text" id="image" placeholder="Image URL" required />
+    <button type="submit">Add Product</button>
+  </form>
+  <script src="../js/addProduct.js" type="module"></script>
+</body>
+</html>
